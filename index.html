@@ -1,61 +1,159 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-</head>
-<body>
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" style= "font-size: 40px; font-family: 'Times New Roman', Times, serif;" href="#">Nohtlus</a>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+    <style>
+      body {
+        background: url("/bootstrap/assets/bromo_blurred_2px.jpg") no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      .container {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(66, 66, 66)">
+    <!-- navbar -->
+    <nav class="navbar nav-underline navbar-expand-lg navbar-dark bg-dark text-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="font-size: 40px; font-family: 'Times New Roman', Times, serif" href="#">Nohtlus</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/bootstrap/index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="/bootstrap/index.html">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/bootstrap/about/">About</a>
+              <a class="nav-link" href="/bootstrap/belanja/index.html">Belanja</a>
             </li>
             <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Others
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/bootstrap/contact/">Contact</a></li>
-                <li><a class="dropdown-item" href="/bootstrap/gallery/">Gallery</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="/bootstrap/sosmed/">Sosmed</a></li>
-            </ul>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Others </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/bootstrap/contact/">Contact</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="/bootstrap/gallery/">Gallery</a>
+                </li>
+              </ul>
             </li>
-        </ul>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
+          </form>
         </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- start -->
+    <div class="container-fluid text-light text-center mb-4" style="height: 100%">
+      <!-- judul -->
+      <div style="font-family: 'Times New Roman', Times, serif; margin-top: 100px; margin-bottom: 20px">
+        <h1>Menu Makanan</h1>
+      </div>
+
+      <!-- corousel -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="width: 95%; margin: auto">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="border-radius: 3%">
+          <div class="carousel-item active">
+            <img src="https://akcdn.detik.net.id/community/media/visual/2022/06/10/ilustrasi-rendang-1_169.jpeg?w=620" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover" />
+            <div class="carousel-caption">
+              <h5>Rendang 🥩</h5>
+              <p>Rendang merupakan makanan yang berasal dari Sumatra Barat.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://akcdn.detik.net.id/community/media/visual/2014/06/04/fbd0b290-efb7-4c72-ae31-42ecb7c015e1_169.jpg?w=620" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover" />
+            <div class="carousel-caption">
+              <h5>Pempek 🥟</h5>
+              <p>makanan yang terbuat dari daging ikan yang digiling lembut.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://akcdn.detik.net.id/community/media/visual/2021/03/19/rujak-cingur_169.jpeg?w=620" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover" />
+            <div class="carousel-caption">
+              <h5>Rujak Cingur 🥗</h5>
+              <p>Makanan tradisional berasal dari Jawa Timur.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- corousel end -->
+      <div class="row text-center align-items-center mt-5">
+        <div class="col-12">
+          <img src="/bootstrap/assets/ChatGPT Image Apr 13, 2025, 05_18_46 PM.png" alt="sl" style="width: 150px; height: 150px" />
+          <h2 class="mt-2" style="font-family: 'Times New Roman', Times, serif">Sulthon Febrian😎</h2>
+          <i class="mb-3">hello, welcome to my restaurant</i> <br /><br /><br />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Rendang</h5>
+              <p class="card-text">
+                Makanan ini berbahan dasar daging dan dimasak dengan bumbu aneka rempah dan santan. Proses memasak rendang sendiri memerlukan waktu hingga berjam-jam. Setelah matang, rendang dapat bertahan hingga berminggu-minggu. Makanan ini berasal dari Sumatra Barat dan menjadi salah satu makanan
+                terlezat di dunia.
+              </p>
+              <a href="/bootstrap/belanja/index.html" class="btn btn-dark d-block mt-auto">Pesan</a>
+            </div>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark"> 15k </span>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pempek</h5>
+              <p class="card-text">
+                Empek-empek atau disebut juga pempek merupakan makanan yang terbuat dari daging ikan yang digiling lembut. Kemudian dicampur dengan tepung sagu dan ditambah beberapa bahan seperti penyedap rasa, garam, telur, dan lainnya. Penganan ini disajikan dengan kuah cuka yang mempunyai rasa
+                asam, manis, dan pedas.
+              </p>
+              <a href="/bootstrap/belanja/index.html" class="btn btn-dark d-block mt-auto">Pesan</a>
+            </div>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark"> 12k </span>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Rujak Cingur</h5>
+              <p class="card-text">
+                Makanan tradisional selanjutnya berasal dari Jawa Timur, yakni rujak cingur. Makanan ini terdiri dari beberapa jenis irisan buah, seperti timun, bengkuang, mangga muda, nanas, dan kedondong. Pelengkapnya adalah lontong, tahu, tempe, bendoyo, cingur, serta sayuran seperti kangkung dan
+                kacang panjang.
+              </p>
+              <a href="/bootstrap/belanja/index.html" class="btn btn-dark d-block mt-auto">Pesan</a>
+            </div>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark"> 10k </span>
+          </div>
+        </div>
+      </div>
     </div>
-</nav>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <!-- end -->
 
-<!-- corousel -->
-
-<div class="container-fluid bg-dark text-light text-center" style="height: 100vh;">
-    <div class="row align-items-center">
-        <div class="col-8">
-            My sosmed
-        </div>
-        <div class="col-4">
-            <img src="/bootstrap/assets/sulthon.png" alt="sl">
-        </div>
-    </div>
-</div>
-
-<!-- jumbotron -->
+    <!-- jumbotron -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
